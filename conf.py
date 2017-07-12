@@ -222,13 +222,13 @@ latex_elements = {
 # (source start file, target name, title,
 #  author, documentclass [howto, manual, or own class]).
 latex_documents = [
-    (master_doc, 'PlanificacinyAdministracindeRedes.tex', 'Planificación y Administración de Redes Documentation',
+    (master_doc, 'PlanificacinyAdministracindeRedes.tex', 'Planificación y Administración de Redes',
      'José Antonio Muñoz Jiménez', 'manual'),
 ]
 
 # The name of an image file (relative to this directory) to place at the top of
 # the title page.
-#latex_logo = None
+latex_logo = 'redes.png'
 
 # For "manual" documents, if this is true, then toplevel headings are parts,
 # not chapters.

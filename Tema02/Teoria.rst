@@ -246,24 +246,25 @@ Ahora que tenemos una noción básica sobre el modelo OSI y sobre lo que sucede 
 Nubes
 -----
 
+.. image:: images/tema02-007.png
+   :align: left
+
 El símbolo de nube indica que existe otra red, por ejemplo Internet. Nos recuerda que existe una manera de conectarse a esa otra red (Internet), pero no suministra todos los detalles de la conexión, ni de la red. Simplemente es útil para realizar los esquemas, si vemos que se conecta a una nube sabemos que esa conexión va a otra red que no es nuestra y que desconocemos, por ejemplo Internet
 
 El propósito de la nube es representar un gran grupo de detalles que no son pertinentes para una situación, o descripción, en un momento determinado. Es importante recordar que solo nos interesa la forma en que las LAN se conectan a las WAN de mayor tamaño, y a Internet (la mayor WAN del mundo), para que cualquier ordenador pueda comunicarse con cualquier otro ordenador, en cualquier lugar y en cualquier momento. Como la nube en realidad no es un dispositivo único, sino un conjunto de dispositivos que operan en todos los niveles del modelo OSI, se clasifica como un dispositivo de las Capas 1-7.
 
-.. image:: images/tema02-007.png
 
 
-
-Dispositivos terminales (Capas 1 y 7)
+Dispositivos terminales (Capas 1 a 7)
 --------------------------------------
+
+.. image:: images/tema02-008.png
 
 Los dispositivos que se conectan de forma directa a un segmento de red se denominan hosts. Estos hosts incluyen ordenadores, tanto clientes y servidores, impresoras, escáneres y otros dispositivos de usuario. Estos dispositivos suministran a los usuarios conexión a la red, por medio de la cual los usuarios comparten, crean y obtienen información.
 
 Los dispositivos host no forman parte de ninguna capa. Tienen una conexión física con los medios de red ya que tienen una tarjeta de red (NIC) y las demás capas OSI se ejecutan en el software ubicado dentro del host. Esto significa que operan en todas las 7 capas del modelo OSI. Ejecutan todo el proceso de encapsulamiento y desencapsulamiento para realizar la tarea de enviar mensajes de correo electrónico, imprimir informes, escanear figuras o acceder a las bases de datos.
 
 No existen símbolos estandarizados para los hosts, pero por lo general es bastante fácil detectarlos. Nosotros dibujaremos éstos como si fueran ordenadores:
-
-.. image:: images/tema02-008.png
 
 
 Dispositivos intermedios (Capas 1, 2 y 3)
