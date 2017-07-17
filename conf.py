@@ -106,6 +106,10 @@ todo_include_todos = False
 
 # -- Options for HTML output ----------------------------------------------
 
+# html_theme = "sphinx_rtd_theme"   # directorio es doc/_themes/sphinx_rtd_theme
+# html_theme_path = ["_themes", ]  
+
+
 # The theme to use for HTML and HTML Help pages.  See the documentation for
 # a list of builtin themes.
 html_theme = 'haiku'
@@ -137,7 +141,7 @@ html_title = project
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
 # so a file named "default.css" will overwrite the builtin "default.css".
-html_static_path = ['_static']
+# html_static_path = ['_static']
 
 # Add any extra paths that contain custom files (such as robots.txt or
 # .htaccess) here, relative to this directory. These files are copied
