@@ -166,32 +166,35 @@ Encaminamiento fijado en origen
 
 En inglés este encaminamiento se llama source routing. En él, son los sistemas finales los que fijan la ruta que ha de seguir cada paquete. Para ello, cada paquete lleva un campo que especifica su ruta(campo RI: Routing Information), y los nodos sólo se dedican a reenviar los paquetes por esas rutas ya especificadas. Así pues, son los sistemas finales los que tienen las tablas de encaminamiento y no se hace necesaria la consulta o existencia de tablas de encaminamiento en los nodos intermedios. Este tipo de encaminamiento suele ser típico de las redes de IBM.
 
+================ ================== ================ =================
+Tabla de encaminamiento del nodo A  Tabla de encaminamiento del nodo B
+----------------------------------- ----------------------------------
+Destino          Ruta a seguir      Destino          Ruta a seguir
+================ ================== ================ =================
+B                B                  A                A
+C                B-C                C                C
+D                B-C-D              D                C-D
+E                H-G-E              E                C-F-E
+F                H-G-F              F                C-F
+G                H-G                G                G
+H                H                  H                A-H
+================ ================== ================ =================
 
-Tabla 2. Tablas de encaminamiento para la red de laFigura 1
 
+Comparación entre ambos tipos de encaminamiento
++++++++++++++++++++++++++++++++++++++++++++++++
 
-
-Tabla de encaminamiento del nodo A	Tabla de encaminamiento del nodo B
-Destino	Ruta a seguir	Destino	Ruta a seguir
-B	B	A	A
-C	B-C	C	C
-D	B-C-D	D	C-D
-E	H-G-E	E	C-F-E
-F	H-G-F	F	C-F
-G	H-G	G	G
-H	H	H	A-H
-Comparación entre ambos tipos de encaminamiento.
 Lo veremos por medio de la siguiente tabla:
 
-Tabla 3. Comparación entre encaminamiento salto a salto y fijado en origen
+=================== ===================================================================== =========================================
+-                   Fijado en Origen                                                      Salto a Salto
+=================== ===================================================================== =========================================
+Conocimiento        Los sistemas finales han de tener un conocimiento completo de la red  SIMPLICIDAD: Los nodos han de tener un conocimiento parcial de la red (saber qué rutas son las mejores)
+Complejidad         Recae toda en los sistemas finales                                    En los sistemas intermedios ya que son los que tienen que encaminar
+Problemas de Bucles No hay bucles: el sistema final fija la ruta (ROBUSTEZ)               Sí pueden ocurrir: no se tiene una visión completa de la red (INCONSISTENCIA)
+=================== ===================================================================== =========================================
 
-
-
-Fijado en Origen	Salto a Salto
-Conocimiento	Los sistemas finales han de tener un conocimiento completo de la red	SIMPLICIDAD: Los nodos han de tener un conocimiento parcial de la red (saber qué rutas son las mejores)
-Complejidad	Recae toda en los sistemas finales	En los sistemas intermedios ya que son los que tienen que encaminar
-Problemas de Bucles	No hay bucles: el sistema final fija la ruta (ROBUSTEZ).	Sí pueden ocurrir: no se tiene una visión completa de la red (INCONSISTENCIA)
-Los bucles (situación que se da cuando los paquetes pasan más de una vez por un nodo) ocurren porque los criterios de los nodos no son coherentes, generalmente debido a que los criterios de encaminamiento o no han convergido después de un cambio en la ruta de un paquete; cuando por cualquier causa un paquete sufre un cambio de encaminamiento, la red tarda en adaptarse a ese cambio pues la noticia del cambio tiene que llegar a todos los nodos. Es en ese transitorio cuando se pueden dar los bucles, ya que unos nodos se han adaptado y otros no. El objetivo de los algoritmos de encaminamiento es detener el curso de los paquetes antes de que se produzcan bucles. Esto es importante sobre todo cuando se envían los paquete s por varias rutas simultáneamente (técnicas de inundación, etc...).
+Los **bucles** (situación que se da cuando los paquetes pasan más de una vez por un nodo) ocurren porque los criterios de los nodos no son coherentes, generalmente debido a que los criterios de encaminamiento o no han convergido después de un cambio en la ruta de un paquete; cuando por cualquier causa un paquete sufre un cambio de encaminamiento, la red tarda en adaptarse a ese cambio pues la noticia del cambio tiene que llegar a todos los nodos. Es en ese transitorio cuando se pueden dar los bucles, ya que unos nodos se han adaptado y otros no. El objetivo de los algoritmos de encaminamiento es detener el curso de los paquetes antes de que se produzcan bucles. Esto es importante sobre todo cuando se envían los paquete s por varias rutas simultáneamente (técnicas de inundación, etc...).
 
 Aplicación práctica
 ===================
