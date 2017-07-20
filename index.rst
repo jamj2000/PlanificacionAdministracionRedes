@@ -8,6 +8,7 @@ Planificación y Administración de Redes
 .. toctree::
    :maxdepth: 1 
    :caption: CONTENIDOS
+   :numbered:
 
    Tema01/index
    Tema02/index
