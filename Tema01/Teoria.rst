@@ -1,5 +1,5 @@
 Un modelo para las comunicaciones
-=================================
+======================================
 
 
 En cualquier comunicación se pueden distinguir los 6 componentes que se indican a continuación:

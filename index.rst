@@ -1,4 +1,4 @@
-.. Planificación y Administración de Redes documentation master file, created by
+.. Planificación y Administración de Redes
 
 =======================================
 Planificación y Administración de Redes
@@ -6,11 +6,8 @@ Planificación y Administración de Redes
 
 
 .. toctree::
-   :maxdepth: 2
+   :maxdepth: 1 
    :caption: CONTENIDOS
-   :name: contenido 
-   :numbered:
-
 
    Tema01/index
    Tema02/index
@@ -24,8 +21,9 @@ Planificación y Administración de Redes
    Tema10/index
    Tema11/index
    Tema12/index
+   
+   Referencias
 
 
-* :ref:`genindex`
 
 
