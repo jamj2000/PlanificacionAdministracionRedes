@@ -1,6 +1,6 @@
 # Apuntes del módulo de Planificación y Administración de Redes.
 
-[![Documentation Status](https://readthedocs.org/projects/planificacionderedes/badge/?version=latest)](http://planificacionderedes.readthedocs.io/es/latest/?badge=latest)
+[![Documentation Status](https://readthedocs.org/projects/planificacionadministracionredes/badge/?version=latest)](http://planificacionadministracionredes.readthedocs.io/es/latest/?badge=latest)
 
 > 1º Administración de Sistemas Informáticos - Curso 2014-15
 >
