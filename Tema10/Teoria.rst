@@ -456,7 +456,7 @@ Estructura jerárquica de internet
 .. image:: images/tema10-033.png
 
 
-..note:: 
+.. note:: 
 
   Tier es una palabra inglesa que puede traducirse por nivel.
 
