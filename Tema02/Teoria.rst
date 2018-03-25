@@ -146,7 +146,7 @@ Niveles y equivalencia
    - 4. Aplicación (capas 5,6 y 7 de OSI)
    - 3. Transporte (capa 4 de OSI)
    - 2. Internet (capa 3 de OSI)
-   - 1. Acceso al medio (capas 1 y 2 de OSI)
+   - 1. Acceso a la red (capas 1 y 2 de OSI)
 
    En estos apuntes usaremos la distribución de capas indicadas en la figura anterior por motivos didácticos al ser la numeración de niveles muy parecida al modelo OSI.
 
