@@ -139,6 +139,17 @@ Niveles y equivalencia
 
 .. image:: images/tema02-000.png
 
+.. note:: 
+
+   En realidad la arquitectura TCP/IP es una arquitectura de 4 capas:
+
+   - 4. Aplicación (capas 5,6 y 7 de OSI)
+   - 3. Transporte (capa 4 de OSI)
+   - 2. Internet (capa 3 de OSI)
+   - 1. Acceso al medio (capas 1 y 2 de OSI)
+
+   En estos apuntes usaremos la distribución de capas indicadas en la figura anterior por motivos didácticos al ser la numeración de niveles muy parecida al modelo OSI.
+
 A mediados de los años setenta empezaron a aparecer los primeros estándares para redes. La **ISO** comenzó a elaborar un modelo arquitectónico de referencia al que llamaron modelo de interconexión de sistemas abiertos (OSI: Open Systems Interconnection). Surgió como un intento de unificar esfuerzos, conocimientos y técnicas para elaborar un modelo de arquitectura basado en capas que sirviera como referencia a los distintos fabricantes de la época para construir redes compatibles entre sí. La publicación final del modelo OSI no llegó hasta 1984 y el modelo obtenido resultó ser demasiado complejo y de difícil implementación.
 
 También durante la década de los setenta, **DARPA** evolucionó su red ARPANET y dio origen a la pila de protocolos TCP/IP, que, por su sencillez y su visión más práctica, empezó a ganar popularidad. TCP/IP acabó convirtiéndose en el estándar de facto de arquitectura en las redes de ordenadores, desbancando así al modelo OSI.
